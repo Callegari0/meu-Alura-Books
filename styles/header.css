@@ -1,0 +1,138 @@
+.cabecalho__menu-hamburguer {
+    width: 36px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 70vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.container__imagem-texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho {
+        padding: .25em 2em;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        display: inline-block;
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1.3em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__item a {
+        font-family: var(--fonte-principal);
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente,
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .opcoes {
+        margin-right: 35em;
+    }
+
+    .container a {
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--preto);
+        font-weight: 400;
+    }
+
+    .container__imagem-texto {
+        display: inline-block;
+        position: relative;
+        bottom: 29px;
+        right: .5em;
+    }
+}
