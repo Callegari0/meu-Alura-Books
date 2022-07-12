@@ -39,6 +39,14 @@
         font-size: 24px;
     }
 
+    .topicos__item a:hover {
+        color: var(--laranja);
+    }
+
+    .topicos__item:hover {
+        background-color: var(--branco);
+    }
+
     .topicos__lista {
         margin: .5em 8em .5em 8em;
     }
@@ -56,5 +64,13 @@
 
     .topicos__lista {
         margin: .5em 28em .5em 28em;
+    }
+
+    .topicos__item {
+        padding: 2em 0;
+    }
+
+    .topicos__item a {
+        font-weight: 700;
     }
 }

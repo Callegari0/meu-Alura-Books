@@ -48,6 +48,10 @@ hr {
         color: var(--cinza-escuro);
     }
 
+    .lista__rodape-item a:hover {
+        color: var(--laranja);
+    }
+
     .coluna1 {
         grid-area: coluna1;
     }
@@ -62,5 +66,16 @@ hr {
 
     .coluna4 {
         grid-area: coluna4;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 3em 5vw 3em 10vw ;
+    }
+    
+    .lista__rodape {
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
     }
 }
